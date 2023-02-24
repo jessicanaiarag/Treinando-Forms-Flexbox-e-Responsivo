@@ -1,0 +1,97 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+}
+article {
+}
+h1 {
+}
+h2 {
+}
+img {
+	max-width: 100%;
+}
+main {
+}
+section {
+}
+figure {
+	margin: 0;
+}
+figcaption {
+  font-size: .8em;
+}
+
+/* Precisamos aumentar o tamanho da fonte. Para isso, usamos a propriedade font, que é um 
+shorthand para utilizarmos font-size e font-family em uma só linha.
+Definimos font como 1.2em/1.2 Helvetica, aria, sans-serif. */
+
+body {
+  font: 1.2em/1.2 Helvetica, aria, sans-serif;
+}
+
+/*Precisamos diminuir o tamanho da fonte dos elementos h1.
+Utilizamos font-size para diminuir o tamanho da fonte do elemento h1.
+Adicionamos também um merge. */
+
+h1 {
+  font-size: 1.8em;
+  margin: .9em 0 0 0;
+}
+
+/* Precisamos agora aumentar o espaçamento entre as figuras.
+Para essa tarefa, podemos definir a width do elemento img como 100%, isso fará com que 
+as imagens se adequem ao tamanho do elemento figure. */
+
+img {
+  max-width: 100%;
+}
+
+/* Agora, queremos adicionar um pouco mais de margin a página.
+Para isso, definimos a margin do elemento body como 0 3%. */
+
+body {
+  font: 1.2em/1.2 Helvetica, aria, sans-serif;
+  margin: 0 3%;
+}
+
+/* Agora, vamos aplicar as regras responsáveis por tornar nossa página responsiva a partir 
+dos 768px. Os estilos adicionados aos elementos dentro do @media terão efeito apenas 
+quando o tamanho da tela for igual ou maior que 768px. */
+
+@media screen and (min-width: 768px) {
+  body {
+    background: rgba(0,0,255,.2);
+    margin: 25px 6%;
+  }
+  figure {
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+
+/* Vamos também criar um breakpoint para telas maiores de desktop. O tamanho escolhido será 992px.
+Agora, vamos aplicar as regras responsáveis por tornar nossa página responsiva a partir 
+dos 992px. */
+
+@media screen and (min-width: 992px) {
+  body {
+    background: rgba(0,255,0,.2);
+    margin: 25px 10%;
+    max-width: 1130px;
+  }
+  figure {
+    width: 30%;
+    margin-right: 2.5%;
+  }
+}
+
+

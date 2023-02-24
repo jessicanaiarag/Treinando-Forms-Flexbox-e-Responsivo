@@ -1,0 +1,156 @@
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10%;
+  height: 50px;
+}
+
+.trybewarts-header-logo {
+  width: 40px;
+}
+
+.trybewarts-login {
+  align-self: center;
+  display: flex;
+}
+
+#button-logar {
+  border-radius: 5px;
+  border: transparent;
+  width: 80px;
+  height: 30px;
+  background-color: blue;
+}
+
+#email, #password {
+  border-radius: 5px;
+  height: 25px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+main {
+  display: flex; 
+  flex-direction:row;
+  background-color: gainsboro;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-wrap: wrap;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+#trybewarts-forms-logo {
+  flex: 1;
+  height: 500px;
+  align-items: self-end;
+  padding: 5px;
+}
+
+.input-form {
+  padding: 5px;
+  margin: 5px;
+  width: 260px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+select {
+  height: 38px;
+  width: 240px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.evaluation {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+#label-house {
+  display: flex;
+  align-items: center;
+}
+
+#label-family {
+  justify-content: center;
+}
+
+.family-label {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.forms-radio {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding: 5px;
+}
+
+.form-radio1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 16%;
+}
+
+.form-radio2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div {
+  padding: 3px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18%;
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+}
+
+#label-infos {
+  padding-left: 18%;
+}
+
+#submit-btn {
+  width: 82%;
+  height: 30px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: blue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: dimgrey;
+  height: 30px;
+  align-items: center;
+  color: white;
+}  
+
